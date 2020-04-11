@@ -1,7 +1,7 @@
 import random
 
 def generate_upper():
-    lucky_number=random.randint(1,5)
+    lucky_number=random.randint(1,6)
     exercise=""
     if lucky_number==1:
         reps=random.randint(2,7)
@@ -18,6 +18,9 @@ def generate_upper():
     elif lucky_number==5:
         reps = random.randint(50, 250)
         exercise=f"{reps} Shrugs"
+    elif lucky_number == 6:
+        sets = random.randint(4, 8)
+        exercise = f"{sets} sets of Shoulder Presses"
     return exercise
 
 
@@ -73,8 +76,8 @@ def generate_wild_Card():
         reps = random.randint(30, 150)
         exercise = f"{reps} Pullups"
     elif lucky_number == 3:
-        reps = random.randint(50, 200)
-        exercise = f"{reps} Dips"
+        sets = random.randint(4,8)
+        exercise = f"{sets} sets of rows"
     elif lucky_number == 4:
         miles = random.randint(2, 5)
         exercise = f"{miles} mile Run"
